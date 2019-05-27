@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin | Delete Vehicle</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-indigo.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+	<!--getmdl-select-->   
+	<link rel="stylesheet" href="getmdl-select/getmdl-select.min.css">
+	<script defer src="getmdl-select/getmdl-select.min.js"></script>
+	<!-- Square card -->
+	<style>
+	.demo-card-square.mdl-card {
+		width: 400px;
+		height: auto;
+		text-align: center;
+		margin:auto;
+		margin-top: 30px;
+
+	}
+	.demo-card-square > .mdl-card__title {
+		color: white;
+		background:#4177f4;
+	}
+	body{
+		font-family: 'Roboto', sans-serif;
+	}
+</style>
+
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title"><i class="fa fa-cog fa-spin fa-fw fa-2x" aria-hidden="true"></i><strong style="font-size: 25px;">hiREnt | Vehicle</strong></span>
+			</div>
+		</header>
+		<main class="mdl-layout__content" style="background:white url(3.jpg) repeat fixed;">
+			<div class="demo-card-square mdl-card mdl-shadow--3dp" style="border-radius: 50px;">
+				<div class="mdl-card__title">
+					<h4 class="mdl-card__title-text" style="padding-left: 90px;font-weight: bold;"><i class="fa fa-car fa-fw" aria-hidden="true"></i>&nbsp;Delete Vehicle</h4>
+				</div>
+				<div class="mdl-card__supporting-text">
+					<!-- Select with floating label and arrow -->
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+						<input type="text" value="" class="mdl-textfield__input" id="sample4" readonly>
+						<input type="hidden" value="" name="sample4">
+						<i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+						<label for="sample4" class="mdl-textfield__label" style="color: #4f84ff;">Select Product ID</label>
+						<ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+							<li class="mdl-menu__item" data-val="01111012">01111012</li>
+							<li class="mdl-menu__item" data-val="01111014">01111014</li>
+							<li class="mdl-menu__item" data-val="01111016">01111016</li>
+						</ul>
+					</div>
+					<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="margin-top: 15px;margin-bottom: 15px;" id="delete" href="home.html">Delete   <i class="fa fa-trash fa-fw" aria-hidden="true"></i>
+					</button>
+				</div>
+				
+			</div>
+		</main>
+		<footer class="mdl-mega-footer">
+			<div class="mdl-mega-footer__bottom-section">
+				<div class="mdl-logo">hiREnt</div>
+				<ul class="mdl-mega-footer__link-list">
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Privacy & Terms</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
